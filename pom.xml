@@ -9,7 +9,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <exec.mainClass>cz.tasks.sunshine.SunShine</exec.mainClass>
+        <exec.mainClass>cz.tasks.sunshine.AppMain</exec.mainClass>
     </properties>
     <dependencies>
         <dependency>
@@ -36,7 +36,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>cz.tasks.sunshine.SunShine</mainClass>
+                            <mainClass>cz.tasks.sunshine.AppMain</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>

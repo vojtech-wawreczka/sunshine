@@ -89,7 +89,7 @@ public class SunShineView {
         
         for(Map.Entry<String, Double> entry : data.getDayTotalMap().entrySet()){
             
-            String month = SunShineService.dayToMonth(actualMonth);
+            String month = SunShineService.dayToMonth(entry.getKey());
             
             if(month == null)
                 continue;
@@ -101,7 +101,7 @@ public class SunShineView {
                 actualMonth = month;
             }
             
-            String.format("%-27s %20s", "Total in day " + entry.getKey() + ": ", decimalFormat.format(entry.getValue()));
+            logger.info(String.format("%-27s %20s", "Total in day " + entry.getKey() + ": ", decimalFormat.format(entry.getValue())));
             
         }
         

@@ -54,7 +54,7 @@ public class SunShineController {
     public void printDaysOfWeek(Date from, Date to, int dayOfWeek) {
         
         try {
-            SunShineData data = service.loadData(from, to, 0);
+            SunShineData data = service.loadData(from, to, dayOfWeek);
             view.printDaysOfWeek(data);
         } catch (IOException ex) {
             logger.error(INPUT_FILE_ERROR_MESSAGE);
